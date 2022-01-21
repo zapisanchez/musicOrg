@@ -75,8 +75,9 @@ func Rename(c *cli.Context) error {
 				}
 				fmt.Printf("Original: %s renamed to %s", f.Name(), strings.TrimSpace(arr[1]))
 				fmt.Println()
+			} else {
+				fmt.Printf("[WARN] Song: %s Not renamed", f.Name())
 			}
-			fmt.Printf("[WARN] Song: %s Not renamed", f.Name())
 		}
 	}
 	return nil
