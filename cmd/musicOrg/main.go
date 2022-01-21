@@ -77,6 +77,7 @@ func Rename(c *cli.Context) error {
 				fmt.Println()
 			} else {
 				fmt.Printf("[WARN] Song: %s Not renamed", f.Name())
+				fmt.Println()
 			}
 		}
 	}
